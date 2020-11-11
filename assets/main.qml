@@ -114,6 +114,7 @@ NavigationPane {
                 }
             }
          }
+         
         ActivityIndicator {
             id: wait_indicator
             preferredWidth: 180
@@ -134,5 +135,12 @@ NavigationPane {
                 }
             }
         ]
-        
-    } } }
+         ProgressDialog {
+             horizontalAlignment: HorizontalAlignment.Fill
+             verticalAlignment: VerticalAlignment.Fill
+             
+             visible: _progressDialog.visible
+         }
+         }
+        }
+    }
